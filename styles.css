@@ -1,0 +1,55 @@
+body{
+  width: 100%;
+  margin: 0;
+  padding: 1.5rem;
+  background-color: rgba(0, 200, 255);
+  color: rgb(255, 255, 255);
+  background-image: url(https://i.pinimg.com/originals/36/f7/5d/36f75d87668f0a3fe0e5ebff7e4e4364.jpg);
+  font-family: Tahoma;
+  font-size: 18px;
+  overflow-x: hidden;
+  
+}
+
+h1, p{
+  text-align: center;
+  margin: 0 auto;
+}
+
+form{
+  width: 70vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin-top: 30px;
+  margin: 0 auto;
+}
+
+fieldset{
+  border: 0;
+}
+
+label{
+  display: block;
+  margin: 1rem 0;
+}
+
+input, textarea, select{
+  margin: 10px 0 0 0;
+  width: 100%;
+}
+
+input, textarea{
+  min-height: 2em;
+  border: 1px solid #ffffff;
+}
+
+.inline{
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"]{
+  margin: 0;
+  vertical-align: center;
+}

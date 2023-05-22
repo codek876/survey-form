@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!--<meta name="viewpoort"/> -->
+  
+  <title>Survey Form</title>
+
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a short survey form on BasketBall</p>
+
+    <form id="survey-form" action="#" method="post">
+      <fieldset>
+        <label id="name-label" for="name"> What is your name?
+          <input type="text" id="name" placeholder="Enter your full name here" required />
+        </label>
+        <label id="email-label" for="email">What is your Email Address?
+          <input type="email" id="email" placeholder="example@email.com" required />
+        </label>
+        <label id="number-label" for="number"> What is your age?
+          <input type="number" id="number" min="18" max="65" required placeholder="Enter your age here" />
+        </fieldset>
+        <fieldset>
+          <label for="dropdown"> What position do you play?
+            <select id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Forward</option>
+              <option value="2">Point Guard</option>
+              <option value="3">Shooting Guard</option>
+              <option value="4">Guard</option>
+            </select>
+          </label>
+          
+        </fieldset>
+        <fieldset>
+          <label for="likes">
+          Do you like playing basketball?
+            <input class="inline" type="radio" name="yes" id="likes" value="Yes" />Yes
+            <input class="inline" type="radio" name="no" id="likes" value="No" />No
+          </label>
+          <label for="good">
+            Are you good at basketball?
+            <input class="inline" type="radio" name="yes" id="good" value="Yes" />Yes
+            <input class="inline" type="radio" name="no" id="good" value="No" />No
+          </label>
+        </fieldset>
+        <fieldset>
+          Who are your favourite players?
+          <label for="players">
+            <input class="inline" id="players" type="checkbox" name="player" value="Shaquille" />Shaquille O'Neil
+          </label>
+          <label>
+            <input class="inline" type="checkbox" name="player" value="Michael" />Michael Jordan
+          </label>
+          <label>
+            <input class="inline" type="checkbox" name="player" value="Lebron" />Lebron James
+          </label>
+          <label>
+            <input class="inline" type="checkbox" name="player" value="Curry" />Stephen Curry
+          </label>
+          <label>
+            <input class="inline" type="checkbox" name="player" value="Durant" />Kevin Durant
+          </label>
+          <label>
+            <input class="inline" type="checkbox" name="player" value="Kobe" />Kobe Bryan
+          </label>
+          <label>
+            <input class="inline" type="checkbox" name="player" value="Larry" />Larry Bird
+          </label>
+          <label>
+            <input class="inline" type="checkbox" name="player" value="Magic" />Magic Johnson
+          </label>
+        </fieldset>
+        <fieldset>
+          <label>
+            Any Comments?
+            <textarea placeholder="place your comments here..." cols="5" rows="10"></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+        
+      </div>
+    </form>
+  </div>
+</body>
+</html>
